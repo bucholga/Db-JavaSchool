@@ -20,7 +20,7 @@ public class Main {
         ClientUpgrade upgCl = new ClientUpgrade(paramsClientMap);
         System.out.println(upgCl);
 
-        ClientClasses clientClasses = new ClientClasses.ClientDataFiller()
+        ClientClasses clientClasses = new ClientClasses.ClientDataBuilder()
                 .debt(100)
                 .bonus(12)
                 .name("Sasha")

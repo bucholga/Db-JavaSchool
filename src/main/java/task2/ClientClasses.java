@@ -9,7 +9,7 @@ public class ClientClasses {
     private final String name;
     private final int salary;
 
-    public ClientClasses(ClientDataFiller cdf)
+    private ClientClasses(ClientDataBuilder cdf)
     {
         this.debt = cdf.debt;
         this.bonus = cdf.bonus;
@@ -17,28 +17,28 @@ public class ClientClasses {
         this.salary = cdf.salary;
     }
 
-    public static class ClientDataFiller{
+    public static class ClientDataBuilder{
         private int debt;
         private int bonus;
         private String name;
         private int salary;
 
-        public ClientDataFiller debt(int debt){
+        public ClientDataBuilder debt(int debt){
             this.debt = debt;
             return this;
         }
 
-        public ClientDataFiller bonus(int bonus){
+        public ClientDataBuilder bonus(int bonus){
             this.bonus = bonus;
             return this;
         }
 
-        public ClientDataFiller salary(int salary){
+        public ClientDataBuilder salary(int salary){
             this.salary = salary;
             return this;
         }
 
-        public ClientDataFiller name(String name){
+        public ClientDataBuilder name(String name){
             this.name = name;
             return this;
         }
