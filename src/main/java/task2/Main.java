@@ -19,5 +19,13 @@ public class Main {
         System.out.println(newClient);
         ClientUpgrade upgCl = new ClientUpgrade(paramsClientMap);
         System.out.println(upgCl);
+
+        ClientClasses clientClasses = new ClientClasses.ClientDataFiller()
+                .debt(100)
+                .bonus(12)
+                .name("Sasha")
+                .salary(800)
+                .build();
+        System.out.println(clientClasses);
     }
 }
