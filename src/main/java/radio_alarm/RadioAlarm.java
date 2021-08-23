@@ -1,6 +1,7 @@
 package radio_alarm;
 
 public class RadioAlarm implements Radio, Alarm{
+
     @Override
     public void a() {
         System.out.println("A method");
